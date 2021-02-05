@@ -9,14 +9,14 @@ public class ZoomDezoom : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKey(zoom) && Camera.main.fieldOfView > 65)
-         {
+        if (Input.GetAxis("Mouse ScrollWheel") > 0 && Camera.main.fieldOfView > 65)
+        {
              Camera.main.fieldOfView -= 1;
-         }
+        }
 
-         if (Input.GetKey(dezoom) && Camera.main.fieldOfView < 135)
-         {
+        if (Input.GetAxis("Mouse ScrollWheel") < 0 && Camera.main.fieldOfView < 135)
+        {
              Camera.main.fieldOfView += 1;
-         }
+        }
     }
 }
