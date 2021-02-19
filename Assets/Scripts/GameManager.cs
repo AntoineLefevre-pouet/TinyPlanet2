@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class GameManager : MonoBehaviour
 {
   public GameObject questionUI;
+  public Image panel;
 
   public static GameManager instance;
 
@@ -23,6 +26,7 @@ public class GameManager : MonoBehaviour
   {
     if(questionUI.activeSelf == false) {
       questionUI.SetActive(true);
+      panel.enabled = true;
     }
   }
 
@@ -30,6 +34,7 @@ public class GameManager : MonoBehaviour
   {
     if(questionUI.activeSelf == true) {
       questionUI.SetActive(false);
+      panel.enabled = false;
     }
   }
 

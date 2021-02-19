@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class ClickOnZone : MonoBehaviour
 {
+  public int numero;
 
     void OnMouseDown()
     {
-      Debug.Log("La sphère est détectée");
+      Debug.Log(numero);
       GameManager.instance.ShowQuestionUI();
     }
 
