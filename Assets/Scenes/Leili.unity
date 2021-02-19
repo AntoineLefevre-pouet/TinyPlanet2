@@ -480,6 +480,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2095262406980511687, guid: 815aeb6f0c1414645b7401eb6287285f,
+        type: 3}
+      propertyPath: numero
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2095262406980511688, guid: 815aeb6f0c1414645b7401eb6287285f,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 815aeb6f0c1414645b7401eb6287285f, type: 3}
 --- !u!4 &1897170651 stripped
@@ -666,6 +676,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1088932602062889070, guid: 5cd3a89ae95dd45978bb8fe21c0b33df,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1088932602062889071, guid: 5cd3a89ae95dd45978bb8fe21c0b33df,
         type: 3}
       propertyPath: m_Pivot.x
@@ -679,7 +694,7 @@ PrefabInstance:
     - target: {fileID: 1088932602062889071, guid: 5cd3a89ae95dd45978bb8fe21c0b33df,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1088932602062889071, guid: 5cd3a89ae95dd45978bb8fe21c0b33df,
         type: 3}
@@ -845,6 +860,11 @@ PrefabInstance:
       propertyPath: questionUI
       value: 
       objectReference: {fileID: 913110917}
+    - target: {fileID: 2095262406980511688, guid: 815aeb6f0c1414645b7401eb6287285f,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 815aeb6f0c1414645b7401eb6287285f, type: 3}
 --- !u!1001 &7009485627159602543
@@ -908,6 +928,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7009485626126942934, guid: 1a5e92b156487432ea759a73a78e7f36,
+        type: 3}
+      propertyPath: panel
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7009485626126942934, guid: 1a5e92b156487432ea759a73a78e7f36,
         type: 3}
