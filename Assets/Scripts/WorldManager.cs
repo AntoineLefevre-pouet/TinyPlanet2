@@ -4,22 +4,12 @@ using UnityEngine;
 
 public class WorldManager : MonoBehaviour
 {
-    public GameObject zone1;
-    public GameObject zone2;
+    public GameObject[] zones;
     public GameObject questionUI;
 
-    public void Zone1()
+    public void ZoneAppear(int nbZone)
         {
-            Debug.Log(message: "Réponse 1");
-            zone1.SetActive(true);
-            questionUI.SetActive(false);
-        }
-
-    public void Zone2()
-        {
-            Debug.Log(message: "Réponse 2");
-            zone2.SetActive(true);
-            questionUI.SetActive(false);
+            zones[nbZone].SetActive(true);
         }
 }
 

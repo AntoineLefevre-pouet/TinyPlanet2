@@ -16,7 +16,7 @@ public class ZoomDezoom : MonoBehaviour
              Camera.main.orthographicSize -= zoomSpeed;
         }
 
-        if (Input.GetAxis("Mouse ScrollWheel") < 0 && Camera.main.orthographicSize < 50)
+        if (Input.GetAxis("Mouse ScrollWheel") < 0 && Camera.main.orthographicSize < 100)
         {
              Camera.main.orthographicSize += zoomSpeed;
         }

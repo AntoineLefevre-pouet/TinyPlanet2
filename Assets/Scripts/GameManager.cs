@@ -40,4 +40,4 @@ public class GameManager : MonoBehaviour
             questionUI.SetActive(true);
         }
     }
-  }
+}
