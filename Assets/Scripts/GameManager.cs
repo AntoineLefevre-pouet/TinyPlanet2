@@ -6,12 +6,10 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-  public GameObject questionUI;
-  public Image panel;
+    public GameObject questionUI;
+    public static GameManager instance;
 
-  public static GameManager instance;
-
-  private void Awake()
+    private void Awake()
   {
     if(instance != null)
     {
@@ -22,20 +20,24 @@ public class GameManager : MonoBehaviour
     instance = this; // permet d'accéder au script depuis n'importe où
   }
 
-  public void ShowQuestionUI()
-  {
-    if(questionUI.activeSelf == false) {
-      questionUI.SetActive(true);
-      panel.enabled = true;
+    public void Pause()
+    {
+        Debug.Log(message: "Pause");
+        Time.timeScale = 0;
+    }
+
+    public void UnPause()
+    {
+        Debug.Log(message: "UnPause");
+        Time.timeScale = 1;
+    }
+
+    public void ShowQuestionUI()
+    {
+        if (questionUI.activeSelf == false)
+        {
+            Pause();
+            questionUI.SetActive(true);
+        }
     }
   }
-
-  public void HideQuestionUI()
-  {
-    if(questionUI.activeSelf == true) {
-      questionUI.SetActive(false);
-      panel.enabled = false;
-    }
-  }
-
-}
