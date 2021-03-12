@@ -14,7 +14,9 @@ public class Questions : MonoBehaviour
 
   public void OnMouseDown()
   {
-    
+    GameManager.instance.ShowQuestionUI();
+    QuestionAppear(numeroZone);
+    Debug.Log("La zone" + numeroZone + "est activée");
   }
 
 }
