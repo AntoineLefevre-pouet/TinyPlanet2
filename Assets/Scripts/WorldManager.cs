@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class WorldManager : MonoBehaviour
 {
-    public GameObject[] zones;
+    public GameObject[] actions;
     public GameObject questionUI;
 
-    public void ZoneAppear(int nbZone)
+    public void ZoneAppear(int nbAction)
         {
-            zones[nbZone].SetActive(true);
+            actions[nbAction].SetActive(true);
+            questionUI.SetActive(false);
         }
 }
 

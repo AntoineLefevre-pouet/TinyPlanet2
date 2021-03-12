@@ -43,5 +43,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2112ce59f138e4262afcef33ed26c346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionUI: {fileID: 1088932602062889068, guid: 5cd3a89ae95dd45978bb8fe21c0b33df,
-    type: 3}
+  questionUI: {fileID: 0}
