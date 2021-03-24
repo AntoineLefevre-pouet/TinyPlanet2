@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class ClickOnZone : MonoBehaviour
 {
-  public int numero;
+    public int numero;
 
     void OnMouseDown()
     {
-      Debug.Log(numero);
-      GameManager.instance.ShowQuestionUI();
+      Debug.Log("La zone " + numero + " est activée");
+      GameManager.instance.ShowQuestionUI(numero);
     }
-
 }

@@ -8,17 +8,33 @@ public class GameManager : MonoBehaviour
 {
     public GameObject questionUI;
     public static GameManager instance;
+    public GameObject[] questions;
+    public GameObject questionsSet;
 
     private void Awake()
-  {
-    if(instance != null)
     {
-      Debug.LogWarning("Il y a plus d'une instance de GameManager dans la scène");
-      return;
+        instance = this; // permet d'accéder au script depuis n'importe où
     }
 
-    instance = this; // permet d'accéder au script depuis n'importe où
-  }
+    public void ShowQuestionUI(int nbQuestion)
+    {
+        if (questionUI.activeSelf == false)
+        {
+            Pause();
+            questionUI.SetActive(true);
+            questions[nbQuestion].SetActive(true);
+        }
+    }
+
+    public void HideQuestionUI()
+    {
+        if (questionUI.activeSelf == true)
+        {
+            UnPause();
+            GameObject.FindGameObjectWithTag("Sets").SetActive(false);
+            questionUI.SetActive(false);
+        }
+    }
 
     public void Pause()
     {
@@ -30,14 +46,5 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log(message: "UnPause");
         Time.timeScale = 1;
-    }
-
-    public void ShowQuestionUI()
-    {
-        if (questionUI.activeSelf == false)
-        {
-            Pause();
-            questionUI.SetActive(true);
-        }
     }
 }

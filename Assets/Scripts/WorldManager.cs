@@ -13,4 +13,3 @@ public class WorldManager : MonoBehaviour
             questionUI.SetActive(false);
         }
 }
-
